@@ -219,7 +219,7 @@
 <script type="module">
   import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
   const prompt = "Write a short poem about a chat application named Synappz that connects people around the world.";
-  const genAI = new GoogleGenerativeAI("AIzaSyDKdUBlH4MVEz83VNUHAR2ZS9wiSEwA3qE");
+  const genAI = new GoogleGenerativeAI("API");
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   async function compose(prompt){
@@ -265,3 +265,4 @@
   });
 </script>
 </html>
+
